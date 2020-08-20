@@ -45,9 +45,28 @@ description: All you need to know about Solidity in one place
 </div>
 
 <section class="playground">
-		<div class="container flex">
-				<img src="{{ site.baseurl }}/images/tryit_sol.png" alt="Solidity Compiler" class="screenshot editable" />
+	<div class="container flex">
+		<div class="text editable"><h2><strong>Try it out!</strong></h2></div>
+	</div>
+	<div class="container flex" style="align-items: start;">
+		<textarea id="compilerInput" style="font-family: monospace; width: 50%;">// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.0;
+contract MyContract {
+	function helloWorld() public pure returns (string memory) {
+		return "Hello, World!";
+	}
+}</textarea>
+		<div style="width: 50%;" class="cointainer">
+			<div class="cointainer flex">
+				<h2><strong>Compiler Result</strong></h2>
+			</div>
+			<div class="cointainer flex" style="flex-direction: column; align-items: start;">
+				<div><strong>Compiler version:</strong> <span id="compiler_version">Loading...</span></div>
+				<div id="compiler_errors"/>
+			</div>
 		</div>
+		<script src="{{ site.baseurl }}/compiler.js" language="JavaScript"></script>
+	</div>
 </section>
 
 <section class="highlight-section-left">
