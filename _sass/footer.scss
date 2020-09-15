@@ -32,7 +32,7 @@
 			}
 
 			&:hover svg {
-				fill: #3FB0AC;
+				fill: #002fa7;
 
 			}
 		}
@@ -43,7 +43,7 @@ footer {
 	padding: 50px 0 50px 0;
 	font-size: 0.9em;
 	position: relative;
-	background: #808080;
+	background: #BBBCBC;
 	color: #111111;
 
 	.copyright {
@@ -59,6 +59,7 @@ footer {
 	
 	&,
 	a {
+		font-family: 'Work Sans', sans-serif;
 		color: #111111;
 		font-weight: normal;
 		font-size: 0.9m;
@@ -80,7 +81,7 @@ footer {
 		text-decoration: underline;
 
 		&:hover {
-			color: #3FB0AC;
+			color: #002fa7;
 		}
 	}
 }
